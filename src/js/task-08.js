@@ -12,17 +12,17 @@ function onFormSubmit(event) {
     // const formData = new FormData(event.currentTarget)
 
    if (event.currentTarget.elements.email.value === '' || event.currentTarget.elements.password.value === '') {
-    alert('sdcscsd')
-   }
-    
-    const user = {
+    alert('Error, all fields must be filled')
+   } else {
+        const user = {
         email: event.currentTarget.elements.email.value,
         password: event.currentTarget.elements.password.value,
 
     }
     console.log(user)
 
-    form.reset()
+    form.reset() 
+   }
 }
 
 
