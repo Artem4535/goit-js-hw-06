@@ -17,8 +17,9 @@ buttonRef.addEventListener('click', generetionRandomColor)
 
 function generetionRandomColor(event) {
   const bodyRef = document.querySelector('body')
-  bodyRef.style.backgroundColor = getRandomHexColor()
-  span.textContent = getRandomHexColor()
+  const bgColor = getRandomHexColor();
+  bodyRef.style.backgroundColor = bgColor;
+  span.textContent = bgColor;
 }
 
 
